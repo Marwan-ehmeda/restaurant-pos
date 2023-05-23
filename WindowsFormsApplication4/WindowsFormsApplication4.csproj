@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAB0A97B-8AC1-478C-8A79-A009FE59FC3C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication4</RootNamespace>
+    <AssemblyName>WindowsFormsApplication4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatMangment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatMangment.Designer.cs">
+      <DependentUpon>CatMangment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="istlam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="istlam.Designer.cs">
+      <DependentUpon>istlam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mod\Connection.cs" />
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9PAid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9PAid.Designer.cs">
+      <DependentUpon>Form9PAid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mangmentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mangmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mangmentDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mangmentDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintSale.Designer.cs">
+      <DependentUpon>PrintSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintSales1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintSales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchases.Designer.cs">
+      <DependentUpon>purchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repositry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repositry.Designer.cs">
+      <DependentUpon>repositry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.cs">
+      <DependentUpon>sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salesTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesTable.Designer.cs">
+      <DependentUpon>salesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suppliers.Designer.cs">
+      <DependentUpon>suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Systemdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Systemdata.Designer.cs">
+      <DependentUpon>Systemdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taslem.Designer.cs">
+      <DependentUpon>Taslem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CatMangment.resx">
+      <DependentUpon>CatMangment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="istlam.resx">
+      <DependentUpon>istlam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9PAid.resx">
+      <DependentUpon>Form9PAid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintSale.resx">
+      <DependentUpon>PrintSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintSales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintSales1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="purchases.resx">
+      <DependentUpon>purchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repositry.resx">
+      <DependentUpon>repositry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesTable.resx">
+      <DependentUpon>salesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suppliers.resx">
+      <DependentUpon>suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Systemdata.resx">
+      <DependentUpon>Systemdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taslem.resx">
+      <DependentUpon>Taslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="mangmentDataSet.xsc">
+      <DependentUpon>mangmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mangmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mangmentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mangmentDataSet.xss">
+      <DependentUpon>mangmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mangmentDataSet1.xsc">
+      <DependentUpon>mangmentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="mangmentDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mangmentDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mangmentDataSet1.xss">
+      <DependentUpon>mangmentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\التقاط.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shish-Tawook-recipe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20a54d97c48f0ba162d6dcb6db866395_w750_h500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ت.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20a54d97c48f0ba162d6dcb6db866395_w750_h500 %281%29ن.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ت1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25-10-600x400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\275882210-1-1280x720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\275882210-1-1280x7201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5778177957993493840.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESCALOPE_SANDWISH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESCALOPE_SANDWISH1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c12af5a89f3fef484139dc393018d16f_w750_h500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c12af5a89f3fef484139dc393018d16f_w750_h5001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c12af5a89f3fef484139dc393018d16f_w750_h5002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\طريقة_شاورما_عربي.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\طريقة_شاورما_عربي1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger-with-Sesame-Seeds-Cheese-and-Veggies-500x375.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0b87c96ab61a232f8da9c646fb6753068875c2ef.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger-with-Sesame-Seeds-Cheese-and-Veggies-500x3751.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0b87c96ab61a232f8da9c646fb6753068875c2ef1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramadanrecipe_recipe_1280_935d49dc0ad-91f3-4f61-9f31-385f9603c3fb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216500_0ب.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\438412ac26e87cea395e671eb2ad1195_w750_h500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\كابتشينو.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\كم-سعرة-حرارية-في-القهوة-التركية-بدون-سكر.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5066406-1219122769.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\السعرات_الحرارية_في_الشاي_الأحمر.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تحضير-مشروب-الكاكاو.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1087420.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10874201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_box_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_box_red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2734822.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-close-button-png-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27348221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-close-button-png-111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurant-logo-with-chef-drawing-template-on-transparent-background-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant-logo-png-favpng-aGPha1KQ8hGUUEJGwDECBtenq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurant-logo-with-chef-drawing-template-on-transparent-background-PNG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-graphics-restaurant-logo-restaurant-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-hotel-room-resturant-5ac87e63596821.7773698515230889953662.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-VisualEditor_-_Icon_-_Close_-_white.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4483612.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45605.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-graphics-restaurant-logo-restaurant-thumbnail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\776443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-85921_search-instagram-search-icon-vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61088.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-restaurant-logo-plates-miscellaneous-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-delivery-freight-transport-wholesale-miscellaneous-freight-transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle-icons-dolly.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-VisualEditor_-_Icon_-_Close_-_white.svg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon--line-iconset--iconsmind-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2342976.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a56d3517bb1323832680fbe7eb342da0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a56d3517bb1323832680fbe7eb342da01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_box_red2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download copyss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloasss copy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\107260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_96831 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download--.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_96831 %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_96831 %283%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_96831 %283%29يي.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89-893796_add-to-shopping-cart-icon-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7764431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\217-2178237_open-eye-vector-show-hide-password-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-password-icon-18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\217-2178237_open-eye-vector-show-hide-password-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1159224-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-in-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-user-profile-avatar-heroes-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\145849.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\942820836246f08c2d6be20a45a84139-shopping-cart-icon-shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop+shopping+trolley+icon-1320191097483113693.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cashier-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop+shopping+trolley+icon-13201910974831136931.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-total-sales-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-total-sales-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorize-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waiter-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waiter-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waiter-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waiter-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waiter-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1458491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1458492.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sum-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paying-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cash-in-hand-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cash-in-hand-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paying-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paying-64 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cashier-64 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cashier-64 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receive-cash-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receive-cash-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paying-64 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paying-64 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paying-64 %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\سس.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1458493.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-user-profile-avatar-heroes-silhouette1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-user-profile-male-user-heroes-head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3601881.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lisa-fotios-3704135.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lisa-fotios-37041351.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lisa-fotios-37041352.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-ekrulila-2307221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lisa-fotios-3704135 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1458495.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\217-2178237_open-eye-vector-show-hide-password-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1159224-2001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-user-profile-male-user-heroes-head1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-user-profile-avatar-heroes-silhouette2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78-785917_user-login-function-name-avatar-user-icon-hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27348222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a56d3517bb1323832680fbe7eb342da02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon--line-iconset--iconsmind-291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_50183.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1458496.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
